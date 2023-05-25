@@ -2,18 +2,17 @@
 #include <cmath>
 using namespace std;
 
-float f(float x){
-    return x*x*cos(x)+1;
+float f(float y){
+    return y*y*cos(y)+1;
 }
 
 int main() {
-    float a=0, b=0, err;
+    float a=0, b=0, err,x;
     do {
         cout << "inserire estrmi" << endl;
         cin >> a >> b;
     } while (f(a) * f(b) >= 0);
-
-    float x =0;
+    
     do {
         x = (a + b) / 2;
 
