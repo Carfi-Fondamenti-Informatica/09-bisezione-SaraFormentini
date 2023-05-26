@@ -12,7 +12,7 @@ int main() {
         cout << "inserire estrmi" << endl;
         cin >> a >> b;
     } while (f(a) * f(b) >= 0);
-    
+
     do {
         x = (a + b) / 2;
 
@@ -25,8 +25,9 @@ int main() {
             err = abs((b - a) / 2);
         }
     }while (err >= 1e-6);
-        cout.precision(4);
-        cout << x;
+        int z=(x*10000);
+        cout<<float(z)/10000;
+
 
 
         return 0;
