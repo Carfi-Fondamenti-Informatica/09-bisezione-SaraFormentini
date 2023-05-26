@@ -25,8 +25,8 @@ int main() {
             err = abs((b - a) / 2);
         }
     }while (err >= 1e-6);
-        int z=(x*10000);
-        cout<<float(z)/10000;
+        int z=(x*1000);
+        cout<<float(z)/1000;
 
 
 
