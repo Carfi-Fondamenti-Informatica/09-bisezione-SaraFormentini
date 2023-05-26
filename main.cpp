@@ -7,9 +7,10 @@ float f(float y){
 }
 
 int main() {
-    float a=0, b=0, err,x;
+    float a=0, b=0,x;
+    double err=0;
     do {
-        cout << "inserire estrmi" << endl;
+        cout << "inserire estremi" << endl;
         cin >> a >> b;
     } while (f(a) * f(b) >= 0);
 
@@ -22,11 +23,14 @@ int main() {
             } else {
                 a = x;
             }
-            err = abs((b - a) / 2);
+            err = (abs((b - a) / 2));
+        } else if (f(x)==0){
+            break;
         }
     }while (err >= 1e-6);
-        int z=(x*100000);
-        cout<<float(z)/100000;
+    cout << int(x * 10000) / 10000.0 <<endl;
+
+
 
         return 0;
 }
